@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flight predictor</title>
+    
+  <!-- Leaflet CSS & JS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="static/css/style.css">
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css"
+  integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+  crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js"
+  integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q=="
+  crossorigin=""></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.5.0/d3.min.js"></script>
+
+</head>
+    
+<body>
+
+    <div class="container-fluid">
+        <div class="row" id="header">
+            <div class="jumbotron">
+                <h1 align="center">Flight Delay Predictor</h1>
+                <br>
+                <h2 align="center">Will your flight depart on time?</h2>
+            </div>
+        </div>  
+    </div>  
+    <div class="container">
+  
+    <div class="col">
+      <h3 style="color: #6e7ce6; align-content: left">
+        Delay Predictor:  Enter Departure Aiport, Destination Airport and Flight Date 
+      </h2> 
+    </div>
+    <br>
+    <form>
+    <div class="row">  
+      <div class="col">
+        <h4>Departure Airport</h4>
+        <div class="btn-group">
+          <select id="dropdownDeparture" ></select>
+          
+        </div>
+      </div>
+      <div class="col">
+        <h4>Arrival Airport</h4>
+        <select id="dropdownDestination" >
+          
+        </select>
+              </div>
+      <div class="col">
+        <h4>Departure Date</h4>
+       
+            <input type="date" id="travelDate" name="trip-start"  min="2020-01-01" max="2020-12-31">                   
+      </div>
+      <div class="col">
+          <button   type = "button" id= "getPrediction" > Get Prediction</button>
+      </div>
+    </div> 
+  </form> 
+    <div class="row">
+        <br>
+          <button class="btn btn-secondary" id="useroutput">
+            <samp>This text prediction.</samp>
+          </button>
+    </div>  
+      
+    <script src="{{url_for('static',filename='js/data.js')}}"></script>
+
+</body>
+</html>
