@@ -1,0 +1,39 @@
+body {
+    background-color: whitesmoke
+}
+#header{ 
+    background-image: url(https://ak6.picdn.net/shutterstock/videos/1023945806/thumb/1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    width: cover
+    }
+.jumbotron{
+    margin-top: 130px;  
+    background: none;
+    background-size: cover;
+    color: white;
+    height: 470px;
+    width: 1760px
+}
+
+#dropdownDeparture{
+	height:2em;
+	width: 10em 
+}
+h4 {
+	font-family: sans-serif;
+    color: black
+}
+#useroutput{
+	margin-top: 60px;
+	height:2.5em;
+	width: 15em
+
+}
+#getPrediction {
+	margin-top: 30px;
+	height:2.5em;
+	width: 15em
+
+}
