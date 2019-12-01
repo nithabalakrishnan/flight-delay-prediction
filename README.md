@@ -1,7 +1,19 @@
-# flight-delay-prediction
+# flight-delay-predictions
 
-This study analyzes high-dimensional data from  US Airports and presents a practical flight delay prediction model. Following a multifactor approach, a novel deep belief network method is employed to mine the inner patterns of flight delays. Support vector regression is embedded in the developed model to perform a supervised fine-tuning within the presented predictive architecture. The proposed method has proven to be highly capable of handling the challenges of large datasets and capturing the key factors influencing delays. 
 
+
+Predicting flight delays has been a popular hobby for many people for decades. Now that we have the ability to use AI and the many machine learning algorithms, we decided to use a couple of them to see how accurate these predictions are. This study analyzes high-dimensional data from US Airports and presents a practical flight delay prediction model. Following a multifactor approach, a novel method is employed to mine the inner patterns of flight delays. The proposed method has proven to be highly capable of handling the challenges of large datasets and capturing the key factors influencing delays. Accurate predictions of far out delays took a few refining steps and here is what we did with our Flight predictor models:
+•	First we built mini model to get a better sense of what our dataset is capable of or its limits.
+•	Random forest classifier
+•	80/20 data set for training and testing respectively
+•	Since its classifier just predicting delay or no delay
+•	Parameters ‘day of month’, ‘departure airport’ ‘destination airport’
+•	R2 = 78
+•	Linear & ridge 
+•	50/50 split
+•	Predicting how many minutes will be delayed
+•	Parameters used: day_of_week, dep_time, origin_airport_id, op_carrier_fl_num, arr_delay, dest_airport_id
+•	R2 = 94
 
 
 
