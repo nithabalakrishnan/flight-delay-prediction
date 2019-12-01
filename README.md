@@ -27,6 +27,8 @@ Machine Learning Algorithms to Predict delays :
 
 2) Ridge Regression to see how many minutes a particular flight will be delayed
 
+![](https://github.com/nithabalakrishnan/flight-delay-prediction/blob/master/Pictures/topdelayed.JPG)
+
 
 2018 USA Domestic flights analysis:
 https://public.tableau.com/profile/loba8789#!/vizhome/Flightspredictor/Mapofstateswithdelays?publish=yes
