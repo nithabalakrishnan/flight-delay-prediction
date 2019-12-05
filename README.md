@@ -1,5 +1,7 @@
 # flight-delay-predictions
 
+![](https://github.com/nithabalakrishnan/flight-delay-prediction/blob/master/Pictures/scheduled.JPG)
+
 
 
 Predicting flight delays has been a popular hobby for many people for decades. Now that we have the ability to use AI and the many machine learning algorithms, we decided to use a couple of them to see how accurate these predictions are. This study analyzes high-dimensional data from US Airports and presents a practical flight delay prediction model. Following a multifactor approach, a novel method is employed to mine the inner patterns of flight delays. The proposed method has proven to be highly capable of handling the challenges of large datasets and capturing the key factors influencing delays. Accurate predictions of far out delays took a few refining steps and here is what we did with our Flight predictor models:
